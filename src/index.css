@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+  
+  /* Custom colors for architectural feel */
+  --color-concrete-50: #f8fafc;
+  --color-concrete-100: #f1f5f9;
+  --color-concrete-200: #e2e8f0;
+  --color-concrete-800: #1e293b;
+  --color-concrete-900: #0f172a;
+
+  --color-safety-amber: #f59e0b;
+  --color-industrial-navy: #0f172a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-concrete-50 text-concrete-900 antialiased;
+}
