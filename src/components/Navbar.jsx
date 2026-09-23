@@ -7,6 +7,7 @@ export default function Navbar() {
 
   const navLinks = [
     { name: 'About', href: '#about' },
+    { name: 'Experience', href: '#experience' },
     { name: 'Skills', href: '#skills' },
     { name: 'Projects', href: '#projects' },
     { name: 'Education', href: '#education' },
@@ -28,7 +29,7 @@ export default function Navbar() {
             className="flex items-center gap-2 cursor-pointer"
           >
             <HardHat className="text-safety-amber h-8 w-8" />
-            <span className="font-bold text-xl text-concrete-900 tracking-tight">Sharath<span className="text-safety-amber">.PE</span></span>
+            <span className="font-bold text-xl text-concrete-900 tracking-tight">Sharath<span className="text-safety-amber"> Kumar V</span></span>
           </motion.a>
           
           <div className="hidden md:flex space-x-8">

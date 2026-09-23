@@ -1,123 +1,157 @@
-import { Briefcase, GraduationCap, MapPin, Building2, HardHat, Ruler } from 'lucide-react';
-
 export const personalInfo = {
-  name: "Sharath, PE",
-  title: "Professional Civil Engineer",
-  headline: "Designing Resilient Infrastructure for a Sustainable Future",
-  summary: "Specializing in Structural Analysis, Site Execution, Project Management, and Highway & Urban Infrastructure. Committed to engineering solutions that blend safety, durability, and cost-efficiency.",
+  name: "Sharath Kumar V",
+  title: "Architectural Designer & Civil Engineer",
+  headline: "Architectural Design, Site Management & 3D Visualization",
+  summary: "Detail-oriented Architectural Designer & Civil Engineer with 4+ years of experience in structural design, site execution, quality assurance, and project estimation. Proficient in AutoCAD, SketchUp & Lumion, with a proven track record of delivering high-value construction projects on schedule.",
+  photo: "/sharath.jpg",
   stats: [
-    { label: "Experience", value: "8+ Years" },
-    { label: "Projects Completed", value: "25+" },
-    { label: "Credentials", value: "Licensed PE" }
+    { label: "Experience", value: "3+ Yrs" },
+    { label: "Projects", value: "10+" },
+    { label: "Waste Reduced", value: "12%" }
   ],
   contact: {
-    email: "sharath.engineer@example.com",
-    phone: "+1 (555) 123-4567",
-    location: "Chicago, IL",
-    linkedin: "linkedin.com/in/sharath-pe"
+    email: "sharathleo637@gmail.com",
+    phone: "+91 7561844151",
+    location: "Calicut, Kerala, India",
+    linkedin: "linkedin.com/in/sharathkumarv"
   },
   about: {
-    overview: "I am a dedicated Civil Engineer with a robust background in overseeing large-scale commercial and infrastructure projects from conception to completion. My career is built on a foundation of rigorous structural analysis and hands-on site management.",
-    philosophy: "My engineering philosophy centers on sustainability, strict safety compliance, and uncompromising structural integrity. I believe that modern infrastructure must not only serve the needs of today but also adapt to the environmental challenges of tomorrow."
+    overview: "Detail-oriented Civil Engineer and Architectural Designer with 4+ years of experience in structural design, site execution, quality assurance, and project estimation for commercial and residential developments. Proficient in AutoCAD, SketchUp, and Lumion, with a proven track record of reducing material waste by 12% and delivering high-value construction projects on schedule.",
+    philosophy: "Adept at coordinating multidisciplinary teams, managing subcontractor workflows, and ensuring strict compliance with local building codes (IS Codes, NBC) and safety regulations — from blueprint to built reality."
   }
 };
 
 export const skills = {
   technical: [
-    { name: "AutoCAD", level: 95 },
-    { name: "Revit", level: 90 },
-    { name: "STAAD.Pro", level: 85 },
-    { name: "ETABS", level: 85 },
-    { name: "Civil 3D", level: 80 },
-    { name: "Primavera P6", level: 75 },
-    { name: "MS Project", level: 80 }
+    { name: "SketchUp", level: 95 },
+    { name: "Lumion", level: 92 },
+    { name: "AutoCAD", level: 90 },
+    { name: "Photoshop", level: 85 }
   ],
   domain: [
-    "Site Inspection",
-    "Quantity Surveying (BOQ)",
-    "Reinforced Concrete (RCC) Design",
-    "Geotechnical Analysis",
-    "Building Codes Compliance",
-    "Quality Control (QA/QC)",
-    "Risk Management"
+    "On-site Supervision & Site Execution",
+    "Bar Bending Schedule (BBS)",
+    "Quality Control (QA/QC) & Concrete Technology",
+    "Cost Estimation & BOQ Preparation",
+    "Vendor & Subcontractor Management",
+    "IS Codes (IS 456, IS 875) & NBC Compliance",
+    "3D Architectural Modeling & Photorealistic Rendering",
+    "Structural Drawing Review & MEP Coordination"
   ]
 };
+
+export const experience = [
+  {
+    id: 1,
+    role: "Architectural Designer & Site Management",
+    company: "Sthaayi Designs Pvt Ltd",
+    period: "2025 – Present",
+    location: "Calicut, Kerala",
+    type: "Current",
+    responsibilities: [
+      "Leading architectural design projects for commercial and residential clients.",
+      "Managing site activities and overseeing project execution from design to delivery.",
+      "Coordinating with structural, MEP, and interior teams to ensure design integrity.",
+      "Producing 3D visualizations and walkthroughs using SketchUp and Lumion."
+    ]
+  },
+  {
+    id: 2,
+    role: "Civil Project Engineer",
+    company: "Asok Architecture Pvt Limited",
+    period: "July 2020 – 2022",
+    location: "Calicut, Kerala",
+    type: "Previous",
+    responsibilities: [
+      "Supervised daily site execution for a ₹45 Cr multi-story commercial complex, overseeing structural steel framing, reinforced concrete works, and finishing activities.",
+      "Prepared detailed Bill of Quantities (BOQ), material requisition orders, and rate analyses — optimizing procurement cycles to reduce site material delays by 20%.",
+      "Reviewed structural and MEP drawings using AutoCAD to resolve design conflicts on-site.",
+      "Enforced quality control protocols, inspecting formwork, rebar placements, slump tests, and cube compressive strength tests across all construction phases.",
+      "Directed a site team of 4 junior supervisors and managed over 120 subcontracted skilled/unskilled labourers.",
+      "Maintained daily progress logs (DPRs), safety compliance records, and site inventory reports using MS Excel and ERP tools."
+    ]
+  }
+];
 
 export const projects = [
   {
     id: 1,
-    title: "G+12 Commercial Complex",
+    title: "₹45 Cr Multi-Story Commercial Complex",
     category: "Commercial",
-    location: "Downtown Chicago, IL",
-    scale: "250,000 sq ft",
-    tools: ["AutoCAD", "ETABS", "MS Project"],
+    location: "Calicut, Kerala",
+    scale: "Multi-Storey",
+    tools: ["AutoCAD", "SketchUp", "Lumion"],
     responsibilities: [
-      "Led the structural design and analysis for the RCC framework.",
-      "Coordinated with architectural and MEP teams to resolve clashes.",
-      "Ensured zero safety incidents during the 18-month construction phase."
+      "Supervised daily site execution covering structural steel framing and RCC works.",
+      "Coordinated with MEP teams and reviewed structural drawings in AutoCAD.",
+      "Enforced QA/QC protocols including slump tests and cube compressive strength inspections.",
+      "Managed 4 junior supervisors and 120+ subcontracted skilled labourers."
     ],
     image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800",
     specs: {
-      budget: "$45M",
-      duration: "18 Months",
-      materials: "High-Strength Concrete, Structural Steel"
+      budget: "₹45 Crore",
+      duration: "2 Years",
+      materials: "Structural Steel, RCC Framework, Masonry"
     }
   },
   {
     id: 2,
-    title: "4-Lane Highway Stretch",
-    category: "Infrastructure",
-    location: "Interstate 90, IL",
-    scale: "15 Miles",
-    tools: ["Civil 3D", "Primavera P6"],
+    title: "Modern Residential Villa — 3D Design",
+    category: "Residential",
+    location: "Kerala, India",
+    scale: "3,200 sq ft",
+    tools: ["SketchUp", "Lumion", "Photoshop", "AutoCAD"],
     responsibilities: [
-      "Managed site execution and contractor scheduling.",
-      "Implemented advanced geotechnical stabilization techniques.",
-      "Conducted daily QA/QC inspections for asphalt laying."
+      "Created complete 2D floor plans and elevation blueprints in AutoCAD.",
+      "Built detailed 3D architectural massing and material texturing using SketchUp.",
+      "Produced photorealistic exterior lighting and landscape renders with Lumion.",
+      "Performed color grading and post-processing in Photoshop for client presentations."
     ],
-    image: "https://images.unsplash.com/photo-1545558014-8692077e9b5c?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800",
     specs: {
-      budget: "$120M",
-      duration: "24 Months",
-      materials: "Asphalt, Geogrids, RC Pipes"
+      budget: "Residential",
+      duration: "3 Weeks",
+      materials: "RCC Structure, Glass Facade, Timber Cladding"
     }
   },
   {
     id: 3,
-    title: "Eco-Friendly Residential Towers",
+    title: "Contemporary Interior & Landscape Rendering",
     category: "Residential",
-    location: "Austin, TX",
-    scale: "Two Towers, 300 Units",
-    tools: ["Revit", "STAAD.Pro"],
+    location: "Calicut, Kerala",
+    scale: "2,400 sq ft",
+    tools: ["SketchUp", "Photoshop", "Lumion"],
     responsibilities: [
-      "Designed foundation systems adhering to strict LEED requirements.",
-      "Performed structural health monitoring during peak construction.",
-      "Optimized material usage saving 10% of the structural budget."
+      "Modeled custom interior furniture, lighting layouts, and wall panelling in SketchUp.",
+      "Used Lumion for material reflections, soft shadows, and vegetation placement.",
+      "Enhanced final imagery in Photoshop for professional client presentation.",
+      "Delivered photorealistic walkthroughs for client approval prior to construction."
     ],
-    image: "https://images.unsplash.com/photo-1448697138198-9d192f0b64d1?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=800",
     specs: {
-      budget: "$85M",
-      duration: "20 Months",
-      materials: "Recycled Steel, Low-Carbon Concrete"
+      budget: "Interior Project",
+      duration: "2 Weeks",
+      materials: "Hardwood, Marble, Ambient Architectural Lighting"
     }
   },
   {
     id: 4,
-    title: "Urban Bridge Rehabilitation",
+    title: "Civil Structural Elevation & Detailing",
     category: "Infrastructure",
-    location: "Seattle, WA",
-    scale: "1.2 Miles",
-    tools: ["AutoCAD", "STAAD.Pro"],
+    location: "Kannur, Kerala",
+    scale: "4,500 sq ft",
+    tools: ["AutoCAD", "SketchUp", "Photoshop"],
     responsibilities: [
-      "Assessed structural fatigue and designed retrofitting solutions.",
-      "Managed traffic diversion planning during construction.",
-      "Overseen the installation of carbon fiber reinforcement."
+      "Designed detailed 2D structural drafting including column-beam grid layouts.",
+      "Prepared BOQ and rate analyses in compliance with IS 456 and IS 875.",
+      "Converted 2D CAD files into 3D volume representations for client review.",
+      "Prepared client-ready presentation sheets with Photoshop composite layouts."
     ],
-    image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1541888946425-d0fbb186a5b7?auto=format&fit=crop&q=80&w=800",
     specs: {
-      budget: "$25M",
-      duration: "12 Months",
-      materials: "Carbon Fiber, Epoxy Resins, Steel Plates"
+      budget: "Civil Project",
+      duration: "3 Weeks",
+      materials: "RCC Framework, Masonry Walls"
     }
   }
 ];
@@ -125,23 +159,35 @@ export const projects = [
 export const education = [
   {
     id: 1,
-    degree: "M.S. in Structural Engineering",
-    institution: "University of Illinois at Urbana-Champaign",
-    year: "2015-2017",
-    honors: "Summa Cum Laude"
-  },
-  {
-    id: 2,
-    degree: "B.S. in Civil Engineering",
-    institution: "Purdue University",
-    year: "2011-2015",
-    honors: "Dean's List"
+    degree: "Diploma in Civil Engineering",
+    institution: "Malabar Polytechnic College, Kottakkal, Malappuram",
+    year: "Civil Engineering",
+    honors: "Diploma Holder"
   }
 ];
 
 export const certifications = [
-  { id: 1, name: "Professional Engineer (PE) License - State of Illinois", year: "2019" },
-  { id: 2, name: "Project Management Professional (PMP)", year: "2020" },
-  { id: 3, name: "OSHA 30-Hour Construction Safety", year: "2018" },
-  { id: 4, name: "LEED Green Associate", year: "2021" }
+  { id: 1, name: "AutoCAD for Civil Engineers – Autodesk Certified User", year: "Autodesk" },
+  { id: 2, name: "SketchUp Architectural 3D Modeling", year: "Certified" },
+  { id: 3, name: "Lumion Photorealistic Architectural Rendering", year: "Certified" },
+  { id: 4, name: "Site Safety & QA/QC – IS Codes & NBC Compliance", year: "Certified" }
+];
+
+export const competencies = [
+  {
+    category: "Engineering Software",
+    items: ["AutoCAD", "SketchUp", "Lumion", "Photoshop", "MS Excel", "ERP Tools"]
+  },
+  {
+    category: "Site Operations",
+    items: ["On-site Supervision", "Bar Bending Schedule (BBS)", "Quality Control (QA/QC)", "Concrete Technology", "DPR Maintenance"]
+  },
+  {
+    category: "Project Management",
+    items: ["Cost Estimation & BOQ", "Vendor Management", "Subcontractor Scheduling", "Site Safety (OSHA)", "Material Procurement"]
+  },
+  {
+    category: "Standards & Codes",
+    items: ["IS 456", "IS 875", "NBC (National Building Code)", "British Standards"]
+  }
 ];

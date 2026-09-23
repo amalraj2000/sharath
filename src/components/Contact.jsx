@@ -37,7 +37,7 @@ export default function Contact() {
           >
             <motion.h3 variants={itemVariants} className="text-2xl font-semibold text-industrial-navy mb-6">Contact Information</motion.h3>
             <motion.p variants={itemVariants} className="text-concrete-800 mb-8 leading-relaxed">
-              Open to discussing new structural engineering projects, consulting opportunities, or site management roles.
+              Open to discussing architectural design projects, 3D visualization work, site management roles, or civil engineering opportunities in Kerala and beyond.
             </motion.p>
             
             <div className="space-y-6">
