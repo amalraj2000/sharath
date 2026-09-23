@@ -1,5 +1,5 @@
 import { personalInfo } from '../data';
-import { ArrowRight, Phone, Mail, GraduationCap, CheckCircle2 } from 'lucide-react';
+import { Phone, Mail, GraduationCap, CheckCircle2, FolderOpen } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export default function Hero() {
@@ -57,9 +57,14 @@ export default function Hero() {
             </motion.div>
 
             <motion.div variants={itemVariants} className="flex flex-wrap gap-4 mb-12">
-              <motion.a whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} href="#projects" className="inline-flex items-center justify-center gap-2 bg-industrial-navy text-white px-7 py-3.5 rounded-lg hover:bg-concrete-800 transition-all shadow-md font-medium">
+              <motion.a
+                whileHover={{ scale: 1.03 }}
+                whileTap={{ scale: 0.97 }}
+                href="#projects"
+                className="inline-flex items-center justify-center gap-2 bg-industrial-navy text-white px-7 py-3.5 rounded-lg hover:bg-concrete-800 transition-all shadow-md font-medium"
+              >
+                <FolderOpen className="w-5 h-5" />
                 View Projects
-                <ArrowRight className="w-5 h-5" />
               </motion.a>
               
               <motion.a whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} href={`tel:${personalInfo.contact.phone}`} className="inline-flex items-center justify-center gap-2 bg-white text-concrete-900 border border-concrete-300 px-6 py-3.5 rounded-lg hover:border-safety-amber hover:text-safety-amber transition-all shadow-sm font-medium">

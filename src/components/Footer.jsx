@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="bg-industrial-navy text-white pt-16 pb-8 border-t-4 border-safety-amber overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
+        <div className="grid md:grid-cols-2 gap-8 mb-12">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -38,28 +38,7 @@ export default function Footer() {
             </ul>
           </motion.div>
           
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
-          >
-            <h4 className="text-lg font-bold mb-4 border-b border-concrete-800 pb-2 inline-block">Specializations</h4>
-            <ul className="space-y-2">
-              <li className="text-concrete-200 text-sm flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-safety-amber"></span>
-                Autodesk Certified AutoCAD User
-              </li>
-              <li className="text-concrete-200 text-sm flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-safety-amber"></span>
-                SketchUp & Lumion Specialist
-              </li>
-              <li className="text-concrete-200 text-sm flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-safety-amber"></span>
-                IS Codes & NBC Compliance (IS 456, IS 875)
-              </li>
-            </ul>
-          </motion.div>
+
         </div>
         
         <motion.div 
@@ -72,9 +51,7 @@ export default function Footer() {
           <p className="text-concrete-200 text-sm text-center md:text-left">
             &copy; {new Date().getFullYear()} {personalInfo.name}. All rights reserved.
           </p>
-          <div className="text-concrete-200 text-sm font-medium tracking-wide">
-            Designed in Calicut, Kerala · Built with React
-          </div>
+
         </motion.div>
       </div>
     </footer>
