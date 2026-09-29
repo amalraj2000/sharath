@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
-import { ChevronLeft, ChevronRight, Layers, FileText, FolderOpen, Pause, Play } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Layers, FileText, FolderOpen, Pause, Play, Download } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const projectHighlights = [
@@ -210,6 +210,21 @@ export default function Projects() {
                   </div>
                 </motion.div>
               ))}
+
+              {/* Download button */}
+              <motion.a
+                href="/plan.pdf"
+                download="Sharath_Kumar_Project_Plans.pdf"
+                whileHover={{ scale: 1.03, y: -2 }}
+                whileTap={{ scale: 0.97 }}
+                className="mt-2 inline-flex items-center justify-center gap-3 w-full bg-industrial-navy text-white font-bold px-6 py-4 rounded-xl hover:bg-concrete-800 transition-all shadow-lg shadow-industrial-navy/20 group"
+              >
+                <span className="bg-safety-amber/20 group-hover:bg-safety-amber/30 p-1.5 rounded-lg transition-colors">
+                  <Download className="w-5 h-5 text-safety-amber" />
+                </span>
+                Download Project Plans
+                <span className="ml-auto text-xs text-concrete-400 font-normal">PDF</span>
+              </motion.a>
             </div>
 
             {/* Slider on right */}
