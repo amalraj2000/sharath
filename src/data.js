@@ -13,7 +13,7 @@ export const personalInfo = {
     email: "sharathleo637@gmail.com",
     phone: "+91 7561844151",
     location: "Calicut, Kerala, India",
-    linkedin: "linkedin.com/in/sharathkumarv"
+    linkedin: "linkedin.com/in/sharath756"
   },
   about: {
     overview: "Detail-oriented Civil Engineer and Architectural Designer with 4+ years of experience in structural design, site execution, quality assurance, and project estimation for commercial and residential developments. Proficient in AutoCAD, SketchUp, and Lumion, with a proven track record of reducing material waste by 12% and delivering high-value construction projects on schedule.",
@@ -87,7 +87,8 @@ export const projects = [
       "Enforced QA/QC protocols including slump tests and cube compressive strength inspections.",
       "Managed 4 junior supervisors and 120+ subcontracted skilled labourers."
     ],
-    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800",
+    image: "/projects/p1-1.jpg",
+    images: ["/projects/p1-1.jpg", "/projects/p1-2.jpg", "/projects/p1-3.jpg"],
     specs: {
       budget: "₹45 Crore",
       duration: "2 Years",
@@ -107,7 +108,8 @@ export const projects = [
       "Produced photorealistic exterior lighting and landscape renders with Lumion.",
       "Performed color grading and post-processing in Photoshop for client presentations."
     ],
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800",
+    image: "/projects/p2-1.jpg",
+    images: ["/projects/p2-1.jpg", "/projects/p2-2.jpg", "/projects/p2-3.jpg"],
     specs: {
       budget: "Residential",
       duration: "3 Weeks",
@@ -127,7 +129,8 @@ export const projects = [
       "Enhanced final imagery in Photoshop for professional client presentation.",
       "Delivered photorealistic walkthroughs for client approval prior to construction."
     ],
-    image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=800",
+    image: "/projects/p3-1.jpg",
+    images: ["/projects/p3-1.jpg", "/projects/p3-2.jpg", "/projects/p3-3.jpg"],
     specs: {
       budget: "Interior Project",
       duration: "2 Weeks",
@@ -147,7 +150,8 @@ export const projects = [
       "Converted 2D CAD files into 3D volume representations for client review.",
       "Prepared client-ready presentation sheets with Photoshop composite layouts."
     ],
-    image: "https://images.unsplash.com/photo-1541888946425-d0fbb186a5b7?auto=format&fit=crop&q=80&w=800",
+    image: "/projects/p4-1.jpg",
+    images: ["/projects/p4-1.jpg", "/projects/p4-2.jpg", "/projects/p4-3.jpg"],
     specs: {
       budget: "Civil Project",
       duration: "3 Weeks",

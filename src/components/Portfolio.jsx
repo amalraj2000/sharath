@@ -1,7 +1,74 @@
 import { useState } from 'react';
 import { projects } from '../data';
-import { X, MapPin, Ruler, Calendar, DollarSign, Layers } from 'lucide-react';
+import { X, MapPin, Ruler, Calendar, DollarSign, Layers, ChevronLeft, ChevronRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+
+function ImageGallery({ images, title }) {
+  const [current, setCurrent] = useState(0);
+
+  const prev = () => setCurrent((c) => (c - 1 + images.length) % images.length);
+  const next = () => setCurrent((c) => (c + 1) % images.length);
+
+  return (
+    <div className="mb-8">
+      {/* Main image */}
+      <div className="relative w-full h-64 md:h-96 rounded-xl overflow-hidden bg-concrete-100 group">
+        <AnimatePresence mode="wait">
+          <motion.img
+            key={current}
+            src={images[current]}
+            alt={`${title} — photo ${current + 1}`}
+            initial={{ opacity: 0, x: 40 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -40 }}
+            transition={{ duration: 0.3 }}
+            className="w-full h-full object-cover"
+          />
+        </AnimatePresence>
+
+        {/* Arrows */}
+        {images.length > 1 && (
+          <>
+            <button
+              onClick={prev}
+              className="absolute left-3 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white rounded-full p-2 transition-all opacity-0 group-hover:opacity-100"
+            >
+              <ChevronLeft className="w-5 h-5" />
+            </button>
+            <button
+              onClick={next}
+              className="absolute right-3 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white rounded-full p-2 transition-all opacity-0 group-hover:opacity-100"
+            >
+              <ChevronRight className="w-5 h-5" />
+            </button>
+          </>
+        )}
+
+        {/* Counter */}
+        <div className="absolute bottom-3 right-3 bg-black/50 text-white text-xs px-2.5 py-1 rounded-full font-medium">
+          {current + 1} / {images.length}
+        </div>
+      </div>
+
+      {/* Thumbnails */}
+      {images.length > 1 && (
+        <div className="flex gap-2 mt-3 justify-center">
+          {images.map((img, idx) => (
+            <button
+              key={idx}
+              onClick={() => setCurrent(idx)}
+              className={`w-16 h-12 rounded-lg overflow-hidden border-2 transition-all flex-shrink-0 ${
+                current === idx ? 'border-safety-amber scale-105' : 'border-transparent opacity-60 hover:opacity-90'
+              }`}
+            >
+              <img src={img} alt={`thumb ${idx + 1}`} className="w-full h-full object-cover" />
+            </button>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
 
 export default function Portfolio() {
   const [filter, setFilter] = useState('All');
@@ -70,6 +137,12 @@ export default function Portfolio() {
                       {project.category}
                     </span>
                   </div>
+                  {/* Photo count badge */}
+                  {project.images && project.images.length > 1 && (
+                    <div className="absolute bottom-3 right-3 z-20 bg-black/50 text-white text-xs px-2.5 py-1 rounded-full font-medium">
+                      📷 {project.images.length} photos
+                    </div>
+                  )}
                 </div>
                 
                 <div className="p-6 flex-grow flex flex-col">
@@ -117,6 +190,7 @@ export default function Portfolio() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-concrete-900/80 backdrop-blur-sm"
+            onClick={(e) => { if (e.target === e.currentTarget) setSelectedProject(null); }}
           >
             <motion.div 
               initial={{ opacity: 0, y: 50, scale: 0.95 }}
@@ -136,7 +210,11 @@ export default function Portfolio() {
               </div>
               
               <div className="p-6">
-                <img src={selectedProject.image} alt={selectedProject.title} className="w-full h-64 md:h-96 object-cover rounded-lg mb-8" />
+                {/* Photo Gallery */}
+                <ImageGallery
+                  images={selectedProject.images || [selectedProject.image]}
+                  title={selectedProject.title}
+                />
                 
                 <div className="grid md:grid-cols-3 gap-8">
                   <div className="md:col-span-2 space-y-6">
