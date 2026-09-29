@@ -163,8 +163,33 @@ export const projects = [
 export const education = [
   {
     id: 1,
+    degree: "SSLC (10th)",
+    institution: "Zamorians Higher Secondary School",
+    location: "Tali, Kozhikode, Kerala",
+    year: "Secondary Education",
+    honors: "Completed"
+  },
+  {
+    id: 2,
+    degree: "Higher Secondary (+1 & +2)",
+    institution: "Meenchanda Govt. Higher Secondary School",
+    location: "Vattakinar, Kozhikode, Kerala",
+    year: "Higher Secondary",
+    honors: "Completed"
+  },
+  {
+    id: 3,
+    degree: "ITI (Industrial Training)",
+    institution: "Usha Technical Institute Pvt. Ltd.",
+    location: "Vellayil, Kozhikode, Kerala",
+    year: "Vocational Training",
+    honors: "Certified"
+  },
+  {
+    id: 4,
     degree: "Diploma in Civil Engineering",
-    institution: "Malabar Polytechnic College, Kottakkal, Malappuram",
+    institution: "Malabar Polytechnic College",
+    location: "Kottakkal, Malappuram, Kerala",
     year: "Civil Engineering",
     honors: "Diploma Holder"
   }
